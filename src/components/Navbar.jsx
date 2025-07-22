@@ -1,6 +1,7 @@
 import { NavLink, Link } from "react-router-dom"
 import styles from '../styles/Navbar.module.css'
 import { useEffect, useRef, useState } from "react"
+import { CloseIcon, MenuIcon } from "../assets";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,14 +40,16 @@ function Navbar() {
     <>
       <nav className={styles.navbar}>
         <Link to='/' className={styles.brandName}>GenoHoireDev</Link>
+
         <button
           className={styles.openSidebarBtn}
           onClick={toggleSidebar}
           aria-label="open sidebar"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-          </svg>
+          <MenuIcon
+            width="32px"
+            height="32px"
+          />
         </button>
       
         <ul
@@ -59,9 +62,10 @@ function Navbar() {
               onClick={toggleSidebar}
               aria-label="close sidebar"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
-                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-              </svg>
+              <CloseIcon 
+                width="32px"
+                height="32px"
+              />
             </button>
           </li>
           <li>
