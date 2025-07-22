@@ -16,6 +16,7 @@ function Navbar() {
         <button
           className={styles.openSidebarBtn}
           onClick={toggleSidebar}
+          aria-label="open sidebar"
         >
           <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
@@ -27,6 +28,7 @@ function Navbar() {
             <button
               className={styles.closeSidebarBtn}
               onClick={toggleSidebar}
+              aria-label="close sidebar"
             >
               <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
                 <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
@@ -47,7 +49,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      
+
       <div 
         className={isOpen ? styles.overlay : ''}
         onClick={toggleSidebar}
