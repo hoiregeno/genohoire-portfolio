@@ -66,6 +66,7 @@
 }
 
 .overlay{
+  display: none;
   position: fixed;
   inset: 0;
   z-index: 9;
@@ -74,7 +75,8 @@
 
 @media screen and (max-width: 770px) {
   .openSidebarBtn,
-  .closeSidebarBtn{
+  .closeSidebarBtn,
+  .overlay{
     display: block;  
   }
 
