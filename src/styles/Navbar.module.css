@@ -40,7 +40,38 @@
   background-color: hsla(180, 100%, 97%, 0.1);
 }
 
+.openSidebarBtn,
+.closeSidebarBtn{
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: background-color 200ms ease;
+  cursor: pointer;
+
+  svg{
+    fill: hsl(180, 100%, 97%);
+  }
+}
+.openSidebarBtn:hover,
+.closeSidebarBtn:hover{
+  background-color: hsla(180, 100%, 97%, 0.1);
+}
+
+.openSidebarBtn{
+  padding: 0 1rem;
+}
+.closeSidebarBtn{
+  padding: 1rem;
+}
+
+
 @media screen and (max-width: 770px) {
+  .openSidebarBtn,
+  .closeSidebarBtn{
+    display: block;  
+  }
+
   .linkWrapper{
     position: fixed;
     top: 0;
