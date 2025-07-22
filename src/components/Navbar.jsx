@@ -6,6 +6,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const linkWrapperRef = useRef(null); // ref sidebar so we can toggle its inert attribute.
 
+  // Toggle inert and aria-hidden for desktop and mobile sidebar
   useEffect(()=> {
     const linkWrapper = linkWrapperRef.current; // grab the sidebar element.
     if(!linkWrapper) return;
@@ -27,7 +28,7 @@ function Navbar() {
 
     media.addEventListener("change", updateInert);
 
-    return () => media.removeEventListener("change", updateInert);
+    return () => media.removeEventListener("change", updateInert); // clean up
   }, [isOpen]);
 
   function toggleSidebar(){
