@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     vitePluginSvgr({ svgrOptions: { exportType: 'default' } })
   ],
+  base: "/genohoire-portfolio"
 })
