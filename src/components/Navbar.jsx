@@ -47,6 +47,11 @@ function Navbar() {
           </li>
         </ul>
       </nav>
+      
+      <div 
+        className={isOpen ? styles.overlay : ''}
+        onClick={toggleSidebar}
+      />
     </>
   )
 }
