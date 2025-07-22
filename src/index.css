@@ -17,3 +17,17 @@ body{
   min-height: 100vh;
   background-color: hsl(180, 100%, 7%);
 }
+
+main > section{
+  line-height: 1.5;
+  padding: min(2rem, 5%);
+}
+
+main > section > h1{
+  margin-bottom: 1rem;
+}
+
+main > section > h1,
+main > section > p{
+  color: hsl(180, 100%, 97%);
+}
