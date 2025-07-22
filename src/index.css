@@ -15,7 +15,7 @@ body{
 #root{
   min-height: 100dvh;
   min-height: 100vh;
-  background-color: hsl(180, 100%, 7%);
+  background-color: hsl(210, 100%, 7%);
 }
 
 main > section{
@@ -29,5 +29,5 @@ main > section > h1{
 
 main > section > h1,
 main > section > p{
-  color: hsl(180, 100%, 97%);
+  color: hsl(210, 100%, 97%);
 }
