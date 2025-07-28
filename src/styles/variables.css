@@ -1,0 +1,6 @@
+:root{
+  --text-clr: hsl(210, 100%, 97%);
+  --bg-dark: hsl(210, 100%, 7%);
+  --hover-clr: hsla(210, 100%, 97%, .1);
+  --transition-fast: 100ms ease;
+}
