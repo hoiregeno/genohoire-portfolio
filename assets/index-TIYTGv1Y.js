@@ -69,4 +69,4 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
   -ms-user-select: none;
   user-select: none;
 }
-`,C.appendChild(R)}}if(!HTMLElement.prototype.hasOwnProperty("inert")){var z=new H(document);Object.defineProperty(HTMLElement.prototype,"inert",{enumerable:!0,get:function(){return this.hasAttribute("inert")},set:function(R){z.setInert(this,R)}})}}(),Vd}T0();Gv.createRoot(document.getElementById("root")).render(V.jsx(N.StrictMode,{children:V.jsx(t0,{children:V.jsx(_0,{})})}));
+`,C.appendChild(R)}}if(!HTMLElement.prototype.hasOwnProperty("inert")){var z=new H(document);Object.defineProperty(HTMLElement.prototype,"inert",{enumerable:!0,get:function(){return this.hasAttribute("inert")},set:function(R){z.setInert(this,R)}})}}(),Vd}T0();Gv.createRoot(document.getElementById("root")).render(V.jsx(N.StrictMode,{children:V.jsx(t0,{basename:"/genohoire-portfolio",children:V.jsx(_0,{})})}));
